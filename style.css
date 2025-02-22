@@ -2,6 +2,7 @@
  font-family: mauline;
  src: url(font/Mauline.otf);
 }
+
 @font-face {
  font-family: varoste;
  src: url(font/Varoste.ttf);
@@ -31,7 +32,6 @@ body{
  z-index: -1; 
  object-fit: cover;
 }
-
 
 .video-bg{
  height: 100vh;

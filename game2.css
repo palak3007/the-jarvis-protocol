@@ -1,0 +1,142 @@
+@font-face {
+  font-family: varoste;
+  src: url(font/Varoste.ttf);
+}
+
+@font-face {
+ font-family: nyxerin;
+ src: url(font/NYXERIN.otf);
+}
+
+*{
+     font-family: varoste;
+}
+
+body {       
+ /* font-family: Arial, sans-serif; */
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ height: 100vh;
+ background-color: #f0f0f0;
+
+}
+
+
+.loader{
+     height: 100%;
+     width: 100%;
+     background-color: whitesmoke;
+     position: fixed;
+     z-index: 999;
+     top: 0;
+     transform: all ease 0.5s;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+  }
+  
+  .loader h1{
+    font-family: nyxerin;
+    font-size: 9vw;
+    font-weight: 500;
+   color: transparent; 
+   background: linear-gradient(to right,orange,orangered);
+   -webkit-background-clip: text;
+   position: absolute;
+   opacity: 0;
+   animation-name: load;
+   animation-duration: 1s;
+   animation-delay: 1s;
+   animation-timing-function: linear;
+  }
+  
+
+  .loader h1{
+     margin-bottom: 10vh;
+}
+
+  .loader h1:nth-child(2){
+  animation-delay: 2s;
+  }
+  
+  .loader h1:nth-child(3){
+    animation-delay: 3s;
+  }
+  
+  .loader h1:nth-child(4){
+    animation-delay: 4s;
+  }
+  
+  @keyframes load{
+    0%{
+          opacity: 0;
+    }
+    10%{
+          opacity: 1;
+    }
+    90%{
+          opacity: 1;
+    }
+    100%{
+          opacity: 0;
+    }
+  }
+
+.video-background{
+ position: fixed;
+ overflow: hidden;
+ z-index: -1;
+}
+
+h1{
+     font-size: 80px;
+     width: 60vw;
+     text-align: center;
+     margin-bottom: 5vh;
+     /* color: transparent;  */
+     border-radius: 45%;
+     color: white;
+     background: linear-gradient(to right, #8e2ebf, #4d4add);
+     /* -webkit-background-clip: text; */  
+}
+
+.container {
+ height: 300px;
+ width: 400px;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ text-align: center;
+ background-color: #0006036e;
+ padding-top: 70px;
+ border-radius: 10px;
+ box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+ z-index: 3;
+ 
+}
+
+.container h1 , p {
+ color: #f6f6f6;
+}
+
+button {
+ padding: 10px 20px;
+ font-size: 16px;
+ margin: 10px 0;
+ cursor: pointer;
+}
+
+#clickButton {
+ background-color: #1f94b8;
+ color: #fff;
+ border: none;
+ border-radius: 5px;
+}
+
+#startButton {
+ background-color: #059527;
+ color: #fff;
+ border: none;
+ border-radius: 5px;
+}
