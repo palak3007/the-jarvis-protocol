@@ -17,6 +17,7 @@
    font-family: varoste;
    background-color: black;
    color: white;
+   cursor: none;
 }
 
 
@@ -28,6 +29,7 @@
 html, body{
        height: 100%;
        width: 100%;
+       
 }
 
 #cursor{
