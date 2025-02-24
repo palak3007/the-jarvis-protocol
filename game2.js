@@ -35,7 +35,7 @@ function countDown() {
         timeLeftDisplay.textContent = timeLeft;
     } else {
         clearInterval(timer);
-        alert(`Awwwwwwww.... bas itna h! You clicked ${clickCount} times.`);
+        alert(`Awwwwwwww.... bas itna hi! i scored much higher than you but anyway, You clicked ${clickCount} times.`);
     }
 }
 
