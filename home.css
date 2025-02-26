@@ -17,6 +17,7 @@
    font-family: varoste;
    background-color: black;
    color: white;
+   cursor: none;
 }
 
 
@@ -28,6 +29,7 @@
 html, body{
        height: 100%;
        width: 100%;
+       
 }
 
 #cursor{
@@ -73,9 +75,9 @@ html, body{
   
    .navbar a:hover{
       /* color: orange; */
-      transition: all 0.4s ease-in-out;
+      transition: all 0.3s ease-in-out;
       color: transparent; 
-      background: linear-gradient(to right, rgb(5, 192, 255), rgb(178, 84, 255));
+      background: linear-gradient(to right, rgb(5, 192, 255), rgb(186, 122, 238));
       -webkit-background-clip: text;
    }
   
